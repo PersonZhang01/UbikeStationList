@@ -1,0 +1,753 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FF4B85092B17775600FE51CC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B85082B17775600FE51CC /* AppDelegate.swift */; };
+		FF4B850B2B17775600FE51CC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B850A2B17775600FE51CC /* SceneDelegate.swift */; };
+		FF4B850D2B17775600FE51CC /* StationListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B850C2B17775600FE51CC /* StationListViewController.swift */; };
+		FF4B85102B17775600FE51CC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4B850E2B17775600FE51CC /* Main.storyboard */; };
+		FF4B85122B17775700FE51CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF4B85112B17775700FE51CC /* Assets.xcassets */; };
+		FF4B85152B17775700FE51CC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FF4B85132B17775700FE51CC /* LaunchScreen.storyboard */; };
+		FF4B85202B17775700FE51CC /* UbikeStationListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B851F2B17775700FE51CC /* UbikeStationListTests.swift */; };
+		FF4B852A2B17775700FE51CC /* UbikeStationListUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B85292B17775700FE51CC /* UbikeStationListUITests.swift */; };
+		FF4B852C2B17775700FE51CC /* UbikeStationListUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B852B2B17775700FE51CC /* UbikeStationListUITestsLaunchTests.swift */; };
+		FF4B85392B182C5C00FE51CC /* StationListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B85382B182C5C00FE51CC /* StationListViewModel.swift */; };
+		FF4B853C2B18333000FE51CC /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B853B2B18333000FE51CC /* APIManager.swift */; };
+		FF4B853F2B1836DC00FE51CC /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = FF4B853E2B1836DC00FE51CC /* Alamofire */; };
+		FF4B85412B1838AA00FE51CC /* APIComposition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF4B85402B1838AA00FE51CC /* APIComposition.swift */; };
+		FFAC6B642B1858DB00F573EA /* StationList.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B632B1858DB00F573EA /* StationList.swift */; };
+		FFAC6B662B185D8E00F573EA /* StationListUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B652B185D8E00F573EA /* StationListUseCase.swift */; };
+		FFAC6B692B1864C400F573EA /* Encodable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B682B1864C400F573EA /* Encodable+Extension.swift */; };
+		FFAC6B6B2B1868B300F573EA /* Publisher+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B6A2B1868B300F573EA /* Publisher+Extension.swift */; };
+		FFAC6B6D2B18B0C100F573EA /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B6C2B18B0C100F573EA /* UITableView+Extension.swift */; };
+		FFAC6B6F2B18B14800F573EA /* Nib+Reusable+Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B6E2B18B14800F573EA /* Nib+Reusable+Common.swift */; };
+		FFAC6B712B18B33500F573EA /* StationListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B702B18B33500F573EA /* StationListTableViewCell.swift */; };
+		FFAC6B732B18BB6200F573EA /* StationListTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFAC6B722B18BB6200F573EA /* StationListTableViewCell.xib */; };
+		FFAC6B772B1963F400F573EA /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B762B1963F400F573EA /* UITableViewCell+Extension.swift */; };
+		FFAC6B792B19642500F573EA /* UIResponder+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B782B19642500F573EA /* UIResponder+Extension.swift */; };
+		FFAC6B7B2B198DE800F573EA /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B7A2B198DE800F573EA /* UIView+Extension.swift */; };
+		FFAC6B7D2B198E4900F573EA /* UIApplication+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B7C2B198E4900F573EA /* UIApplication+Extension.swift */; };
+		FFAC6B7F2B198EA100F573EA /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B7E2B198EA100F573EA /* Constant.swift */; };
+		FFAC6B812B19991D00F573EA /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B802B19991D00F573EA /* UIColor+Extension.swift */; };
+		FFAC6B842B19B79200F573EA /* DropDownMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B832B19B79200F573EA /* DropDownMenuView.swift */; };
+		FFAC6B862B19B85B00F573EA /* DropDownMenuView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFAC6B852B19B85B00F573EA /* DropDownMenuView.xib */; };
+		FFAC6B882B19C24700F573EA /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B872B19C24700F573EA /* MenuViewController.swift */; };
+		FFAC6B8A2B19C3DA00F573EA /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B892B19C3DA00F573EA /* MenuTableViewCell.swift */; };
+		FFAC6B8D2B19C61D00F573EA /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFAC6B8B2B19C61D00F573EA /* MenuTableViewCell.xib */; };
+		FFAC6B8E2B19C61D00F573EA /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = FFAC6B8C2B19C61D00F573EA /* MenuViewController.xib */; };
+		FFAC6B952B1A054B00F573EA /* DispatchTime+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFAC6B942B1A054B00F573EA /* DispatchTime+Extension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FF4B851C2B17775700FE51CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4B84FD2B17775600FE51CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4B85042B17775600FE51CC;
+			remoteInfo = UbikeStationList;
+		};
+		FF4B85262B17775700FE51CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FF4B84FD2B17775600FE51CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FF4B85042B17775600FE51CC;
+			remoteInfo = UbikeStationList;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FF4B85052B17775600FE51CC /* UbikeStationList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UbikeStationList.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4B85082B17775600FE51CC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FF4B850A2B17775600FE51CC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		FF4B850C2B17775600FE51CC /* StationListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewController.swift; sourceTree = "<group>"; };
+		FF4B850F2B17775600FE51CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FF4B85112B17775700FE51CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		FF4B85142B17775700FE51CC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		FF4B85162B17775700FE51CC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF4B851B2B17775700FE51CC /* UbikeStationListTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UbikeStationListTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4B851F2B17775700FE51CC /* UbikeStationListTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbikeStationListTests.swift; sourceTree = "<group>"; };
+		FF4B85252B17775700FE51CC /* UbikeStationListUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UbikeStationListUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		FF4B85292B17775700FE51CC /* UbikeStationListUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbikeStationListUITests.swift; sourceTree = "<group>"; };
+		FF4B852B2B17775700FE51CC /* UbikeStationListUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UbikeStationListUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FF4B85382B182C5C00FE51CC /* StationListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListViewModel.swift; sourceTree = "<group>"; };
+		FF4B853B2B18333000FE51CC /* APIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		FF4B85402B1838AA00FE51CC /* APIComposition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIComposition.swift; sourceTree = "<group>"; };
+		FFAC6B632B1858DB00F573EA /* StationList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationList.swift; sourceTree = "<group>"; };
+		FFAC6B652B185D8E00F573EA /* StationListUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListUseCase.swift; sourceTree = "<group>"; };
+		FFAC6B682B1864C400F573EA /* Encodable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Encodable+Extension.swift"; sourceTree = "<group>"; };
+		FFAC6B6A2B1868B300F573EA /* Publisher+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Publisher+Extension.swift"; sourceTree = "<group>"; };
+		FFAC6B6C2B18B0C100F573EA /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		FFAC6B6E2B18B14800F573EA /* Nib+Reusable+Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nib+Reusable+Common.swift"; sourceTree = "<group>"; };
+		FFAC6B702B18B33500F573EA /* StationListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationListTableViewCell.swift; sourceTree = "<group>"; };
+		FFAC6B722B18BB6200F573EA /* StationListTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = StationListTableViewCell.xib; sourceTree = "<group>"; };
+		FFAC6B762B1963F400F573EA /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		FFAC6B782B19642500F573EA /* UIResponder+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIResponder+Extension.swift"; sourceTree = "<group>"; };
+		FFAC6B7A2B198DE800F573EA /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		FFAC6B7C2B198E4900F573EA /* UIApplication+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIApplication+Extension.swift"; sourceTree = "<group>"; };
+		FFAC6B7E2B198EA100F573EA /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		FFAC6B802B19991D00F573EA /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		FFAC6B832B19B79200F573EA /* DropDownMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownMenuView.swift; sourceTree = "<group>"; };
+		FFAC6B852B19B85B00F573EA /* DropDownMenuView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DropDownMenuView.xib; sourceTree = "<group>"; };
+		FFAC6B872B19C24700F573EA /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		FFAC6B892B19C3DA00F573EA /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		FFAC6B8B2B19C61D00F573EA /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		FFAC6B8C2B19C61D00F573EA /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		FFAC6B942B1A054B00F573EA /* DispatchTime+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DispatchTime+Extension.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FF4B85022B17775600FE51CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4B853F2B1836DC00FE51CC /* Alamofire in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4B85182B17775700FE51CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4B85222B17775700FE51CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FF4B84FC2B17775600FE51CC = {
+			isa = PBXGroup;
+			children = (
+				FF4B85072B17775600FE51CC /* UbikeStationList */,
+				FF4B851E2B17775700FE51CC /* UbikeStationListTests */,
+				FF4B85282B17775700FE51CC /* UbikeStationListUITests */,
+				FF4B85062B17775600FE51CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FF4B85062B17775600FE51CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FF4B85052B17775600FE51CC /* UbikeStationList.app */,
+				FF4B851B2B17775700FE51CC /* UbikeStationListTests.xctest */,
+				FF4B85252B17775700FE51CC /* UbikeStationListUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FF4B85072B17775600FE51CC /* UbikeStationList */ = {
+			isa = PBXGroup;
+			children = (
+				FFAC6B822B19B76600F573EA /* DropDownMenu */,
+				FFAC6B672B18647D00F573EA /* Utility */,
+				FF4B853A2B1832B200FE51CC /* API */,
+				FF4B85082B17775600FE51CC /* AppDelegate.swift */,
+				FF4B850A2B17775600FE51CC /* SceneDelegate.swift */,
+				FF4B85382B182C5C00FE51CC /* StationListViewModel.swift */,
+				FF4B850C2B17775600FE51CC /* StationListViewController.swift */,
+				FFAC6B702B18B33500F573EA /* StationListTableViewCell.swift */,
+				FFAC6B722B18BB6200F573EA /* StationListTableViewCell.xib */,
+				FF4B850E2B17775600FE51CC /* Main.storyboard */,
+				FF4B85112B17775700FE51CC /* Assets.xcassets */,
+				FF4B85132B17775700FE51CC /* LaunchScreen.storyboard */,
+				FF4B85162B17775700FE51CC /* Info.plist */,
+			);
+			path = UbikeStationList;
+			sourceTree = "<group>";
+		};
+		FF4B851E2B17775700FE51CC /* UbikeStationListTests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4B851F2B17775700FE51CC /* UbikeStationListTests.swift */,
+			);
+			path = UbikeStationListTests;
+			sourceTree = "<group>";
+		};
+		FF4B85282B17775700FE51CC /* UbikeStationListUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FF4B85292B17775700FE51CC /* UbikeStationListUITests.swift */,
+				FF4B852B2B17775700FE51CC /* UbikeStationListUITestsLaunchTests.swift */,
+			);
+			path = UbikeStationListUITests;
+			sourceTree = "<group>";
+		};
+		FF4B853A2B1832B200FE51CC /* API */ = {
+			isa = PBXGroup;
+			children = (
+				FF4B853B2B18333000FE51CC /* APIManager.swift */,
+				FF4B85402B1838AA00FE51CC /* APIComposition.swift */,
+				FFAC6B632B1858DB00F573EA /* StationList.swift */,
+				FFAC6B652B185D8E00F573EA /* StationListUseCase.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		FFAC6B672B18647D00F573EA /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				FFAC6B682B1864C400F573EA /* Encodable+Extension.swift */,
+				FFAC6B6A2B1868B300F573EA /* Publisher+Extension.swift */,
+				FFAC6B6C2B18B0C100F573EA /* UITableView+Extension.swift */,
+				FFAC6B6E2B18B14800F573EA /* Nib+Reusable+Common.swift */,
+				FFAC6B762B1963F400F573EA /* UITableViewCell+Extension.swift */,
+				FFAC6B782B19642500F573EA /* UIResponder+Extension.swift */,
+				FFAC6B7A2B198DE800F573EA /* UIView+Extension.swift */,
+				FFAC6B7C2B198E4900F573EA /* UIApplication+Extension.swift */,
+				FFAC6B802B19991D00F573EA /* UIColor+Extension.swift */,
+				FFAC6B942B1A054B00F573EA /* DispatchTime+Extension.swift */,
+				FFAC6B7E2B198EA100F573EA /* Constant.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		FFAC6B822B19B76600F573EA /* DropDownMenu */ = {
+			isa = PBXGroup;
+			children = (
+				FFAC6B8B2B19C61D00F573EA /* MenuTableViewCell.xib */,
+				FFAC6B8C2B19C61D00F573EA /* MenuViewController.xib */,
+				FFAC6B852B19B85B00F573EA /* DropDownMenuView.xib */,
+				FFAC6B832B19B79200F573EA /* DropDownMenuView.swift */,
+				FFAC6B872B19C24700F573EA /* MenuViewController.swift */,
+				FFAC6B892B19C3DA00F573EA /* MenuTableViewCell.swift */,
+			);
+			path = DropDownMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FF4B85042B17775600FE51CC /* UbikeStationList */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4B852F2B17775700FE51CC /* Build configuration list for PBXNativeTarget "UbikeStationList" */;
+			buildPhases = (
+				FF4B85012B17775600FE51CC /* Sources */,
+				FF4B85022B17775600FE51CC /* Frameworks */,
+				FF4B85032B17775600FE51CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = UbikeStationList;
+			packageProductDependencies = (
+				FF4B853E2B1836DC00FE51CC /* Alamofire */,
+			);
+			productName = UbikeStationList;
+			productReference = FF4B85052B17775600FE51CC /* UbikeStationList.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FF4B851A2B17775700FE51CC /* UbikeStationListTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4B85322B17775700FE51CC /* Build configuration list for PBXNativeTarget "UbikeStationListTests" */;
+			buildPhases = (
+				FF4B85172B17775700FE51CC /* Sources */,
+				FF4B85182B17775700FE51CC /* Frameworks */,
+				FF4B85192B17775700FE51CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4B851D2B17775700FE51CC /* PBXTargetDependency */,
+			);
+			name = UbikeStationListTests;
+			productName = UbikeStationListTests;
+			productReference = FF4B851B2B17775700FE51CC /* UbikeStationListTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		FF4B85242B17775700FE51CC /* UbikeStationListUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FF4B85352B17775700FE51CC /* Build configuration list for PBXNativeTarget "UbikeStationListUITests" */;
+			buildPhases = (
+				FF4B85212B17775700FE51CC /* Sources */,
+				FF4B85222B17775700FE51CC /* Frameworks */,
+				FF4B85232B17775700FE51CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FF4B85272B17775700FE51CC /* PBXTargetDependency */,
+			);
+			name = UbikeStationListUITests;
+			productName = UbikeStationListUITests;
+			productReference = FF4B85252B17775700FE51CC /* UbikeStationListUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FF4B84FD2B17775600FE51CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					FF4B85042B17775600FE51CC = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					FF4B851A2B17775700FE51CC = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FF4B85042B17775600FE51CC;
+					};
+					FF4B85242B17775700FE51CC = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = FF4B85042B17775600FE51CC;
+					};
+				};
+			};
+			buildConfigurationList = FF4B85002B17775600FE51CC /* Build configuration list for PBXProject "UbikeStationList" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FF4B84FC2B17775600FE51CC;
+			packageReferences = (
+				FF4B853D2B1836DC00FE51CC /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
+			productRefGroup = FF4B85062B17775600FE51CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FF4B85042B17775600FE51CC /* UbikeStationList */,
+				FF4B851A2B17775700FE51CC /* UbikeStationListTests */,
+				FF4B85242B17775700FE51CC /* UbikeStationListUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FF4B85032B17775600FE51CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FFAC6B8D2B19C61D00F573EA /* MenuTableViewCell.xib in Resources */,
+				FF4B85152B17775700FE51CC /* LaunchScreen.storyboard in Resources */,
+				FF4B85122B17775700FE51CC /* Assets.xcassets in Resources */,
+				FF4B85102B17775600FE51CC /* Main.storyboard in Resources */,
+				FFAC6B862B19B85B00F573EA /* DropDownMenuView.xib in Resources */,
+				FFAC6B8E2B19C61D00F573EA /* MenuViewController.xib in Resources */,
+				FFAC6B732B18BB6200F573EA /* StationListTableViewCell.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4B85192B17775700FE51CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4B85232B17775700FE51CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FF4B85012B17775600FE51CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4B850D2B17775600FE51CC /* StationListViewController.swift in Sources */,
+				FFAC6B812B19991D00F573EA /* UIColor+Extension.swift in Sources */,
+				FFAC6B842B19B79200F573EA /* DropDownMenuView.swift in Sources */,
+				FFAC6B772B1963F400F573EA /* UITableViewCell+Extension.swift in Sources */,
+				FFAC6B7D2B198E4900F573EA /* UIApplication+Extension.swift in Sources */,
+				FFAC6B7B2B198DE800F573EA /* UIView+Extension.swift in Sources */,
+				FF4B85092B17775600FE51CC /* AppDelegate.swift in Sources */,
+				FFAC6B662B185D8E00F573EA /* StationListUseCase.swift in Sources */,
+				FFAC6B6F2B18B14800F573EA /* Nib+Reusable+Common.swift in Sources */,
+				FF4B853C2B18333000FE51CC /* APIManager.swift in Sources */,
+				FFAC6B8A2B19C3DA00F573EA /* MenuTableViewCell.swift in Sources */,
+				FFAC6B882B19C24700F573EA /* MenuViewController.swift in Sources */,
+				FFAC6B6B2B1868B300F573EA /* Publisher+Extension.swift in Sources */,
+				FFAC6B642B1858DB00F573EA /* StationList.swift in Sources */,
+				FFAC6B952B1A054B00F573EA /* DispatchTime+Extension.swift in Sources */,
+				FFAC6B692B1864C400F573EA /* Encodable+Extension.swift in Sources */,
+				FFAC6B7F2B198EA100F573EA /* Constant.swift in Sources */,
+				FFAC6B712B18B33500F573EA /* StationListTableViewCell.swift in Sources */,
+				FF4B850B2B17775600FE51CC /* SceneDelegate.swift in Sources */,
+				FF4B85392B182C5C00FE51CC /* StationListViewModel.swift in Sources */,
+				FFAC6B6D2B18B0C100F573EA /* UITableView+Extension.swift in Sources */,
+				FFAC6B792B19642500F573EA /* UIResponder+Extension.swift in Sources */,
+				FF4B85412B1838AA00FE51CC /* APIComposition.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4B85172B17775700FE51CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4B85202B17775700FE51CC /* UbikeStationListTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FF4B85212B17775700FE51CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FF4B852C2B17775700FE51CC /* UbikeStationListUITestsLaunchTests.swift in Sources */,
+				FF4B852A2B17775700FE51CC /* UbikeStationListUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FF4B851D2B17775700FE51CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4B85042B17775600FE51CC /* UbikeStationList */;
+			targetProxy = FF4B851C2B17775700FE51CC /* PBXContainerItemProxy */;
+		};
+		FF4B85272B17775700FE51CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FF4B85042B17775600FE51CC /* UbikeStationList */;
+			targetProxy = FF4B85262B17775700FE51CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FF4B850E2B17775600FE51CC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4B850F2B17775600FE51CC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FF4B85132B17775700FE51CC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FF4B85142B17775700FE51CC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FF4B852D2B17775700FE51CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FF4B852E2B17775700FE51CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FF4B85302B17775700FE51CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UbikeStationList/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.person.UbikeStationList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		FF4B85312B17775700FE51CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UbikeStationList/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.person.UbikeStationList;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		FF4B85332B17775700FE51CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.person.UbikeStationListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UbikeStationList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UbikeStationList";
+			};
+			name = Debug;
+		};
+		FF4B85342B17775700FE51CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.person.UbikeStationListTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/UbikeStationList.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/UbikeStationList";
+			};
+			name = Release;
+		};
+		FF4B85362B17775700FE51CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.person.UbikeStationListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UbikeStationList;
+			};
+			name = Debug;
+		};
+		FF4B85372B17775700FE51CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.person.UbikeStationListUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = UbikeStationList;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FF4B85002B17775600FE51CC /* Build configuration list for PBXProject "UbikeStationList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4B852D2B17775700FE51CC /* Debug */,
+				FF4B852E2B17775700FE51CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4B852F2B17775700FE51CC /* Build configuration list for PBXNativeTarget "UbikeStationList" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4B85302B17775700FE51CC /* Debug */,
+				FF4B85312B17775700FE51CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4B85322B17775700FE51CC /* Build configuration list for PBXNativeTarget "UbikeStationListTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4B85332B17775700FE51CC /* Debug */,
+				FF4B85342B17775700FE51CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FF4B85352B17775700FE51CC /* Build configuration list for PBXNativeTarget "UbikeStationListUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FF4B85362B17775700FE51CC /* Debug */,
+				FF4B85372B17775700FE51CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF4B853D2B1836DC00FE51CC /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.8.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF4B853E2B1836DC00FE51CC /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF4B853D2B1836DC00FE51CC /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = FF4B84FD2B17775600FE51CC /* Project object */;
+}

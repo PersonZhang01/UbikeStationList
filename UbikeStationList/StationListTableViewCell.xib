@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="CUb-Tj-1UM" customClass="StationListTableViewCell" customModule="UbikeStationList" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="CUb-Tj-1UM" id="Bte-db-MGa">
+                <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="afY-2N-whJ">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="60"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4un-XD-d8d">
+                                <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台北市" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QMr-Kd-gjD">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="QMr-Kd-gjD" firstAttribute="leading" secondItem="4un-XD-d8d" secondAttribute="leading" id="EmZ-lP-dTO"/>
+                                    <constraint firstAttribute="trailing" secondItem="QMr-Kd-gjD" secondAttribute="trailing" id="LUS-jG-H9Q"/>
+                                    <constraint firstItem="QMr-Kd-gjD" firstAttribute="top" secondItem="4un-XD-d8d" secondAttribute="top" id="Sd2-Rj-udT"/>
+                                    <constraint firstAttribute="bottom" secondItem="QMr-Kd-gjD" secondAttribute="bottom" id="obc-fU-wDf"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WUZ-MR-ZPs">
+                                <rect key="frame" x="98.333333333333343" y="0.0" width="98.333333333333343" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大安區" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hDY-3m-jNw">
+                                        <rect key="frame" x="0.0" y="0.0" width="98.333333333333329" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hDY-3m-jNw" secondAttribute="trailing" id="bFw-lG-jpD"/>
+                                    <constraint firstAttribute="bottom" secondItem="hDY-3m-jNw" secondAttribute="bottom" id="hcR-P6-bBt"/>
+                                    <constraint firstItem="hDY-3m-jNw" firstAttribute="top" secondItem="WUZ-MR-ZPs" secondAttribute="top" id="o8w-5u-Xo6"/>
+                                    <constraint firstItem="hDY-3m-jNw" firstAttribute="leading" secondItem="WUZ-MR-ZPs" secondAttribute="leading" id="yhF-ug-AZw"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4QD-cj-0uM">
+                                <rect key="frame" x="196.66666666666663" y="0.0" width="196.33333333333337" height="60"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="YouBike2.0_捷運科技大樓站" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kxH-hE-lfp">
+                                        <rect key="frame" x="0.0" y="0.0" width="196.33333333333334" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="kxH-hE-lfp" secondAttribute="bottom" id="1hz-R9-1iQ"/>
+                                    <constraint firstItem="kxH-hE-lfp" firstAttribute="top" secondItem="4QD-cj-0uM" secondAttribute="top" id="5Kd-vs-NCB"/>
+                                    <constraint firstAttribute="trailing" secondItem="kxH-hE-lfp" secondAttribute="trailing" id="8eB-ty-JbQ"/>
+                                    <constraint firstItem="kxH-hE-lfp" firstAttribute="leading" secondItem="4QD-cj-0uM" secondAttribute="leading" id="OnB-O2-X0y"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4QD-cj-0uM" firstAttribute="width" secondItem="afY-2N-whJ" secondAttribute="width" multiplier="2:4" id="5av-Ww-Hxy"/>
+                            <constraint firstAttribute="bottom" secondItem="4QD-cj-0uM" secondAttribute="bottom" id="CMN-be-luc"/>
+                            <constraint firstAttribute="bottom" secondItem="4un-XD-d8d" secondAttribute="bottom" id="ERN-Wh-vyR"/>
+                            <constraint firstItem="4un-XD-d8d" firstAttribute="top" secondItem="afY-2N-whJ" secondAttribute="top" id="Wef-jX-RHT"/>
+                            <constraint firstItem="4un-XD-d8d" firstAttribute="width" secondItem="afY-2N-whJ" secondAttribute="width" multiplier="1:4" id="Yje-sQ-ZZJ"/>
+                            <constraint firstItem="WUZ-MR-ZPs" firstAttribute="width" secondItem="afY-2N-whJ" secondAttribute="width" multiplier="1:4" id="aCs-Vu-qLu"/>
+                            <constraint firstItem="WUZ-MR-ZPs" firstAttribute="top" secondItem="afY-2N-whJ" secondAttribute="top" id="aXf-36-npU"/>
+                            <constraint firstAttribute="bottom" secondItem="WUZ-MR-ZPs" secondAttribute="bottom" id="gRg-hy-3Ny"/>
+                            <constraint firstItem="4QD-cj-0uM" firstAttribute="top" secondItem="afY-2N-whJ" secondAttribute="top" id="nqV-Dp-abl"/>
+                        </constraints>
+                    </stackView>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="afY-2N-whJ" firstAttribute="leading" secondItem="Bte-db-MGa" secondAttribute="leading" id="HAA-Zy-qPL"/>
+                    <constraint firstAttribute="trailing" secondItem="afY-2N-whJ" secondAttribute="trailing" id="ggO-aQ-TUL"/>
+                    <constraint firstItem="afY-2N-whJ" firstAttribute="top" secondItem="Bte-db-MGa" secondAttribute="top" id="jgX-GM-Ucc"/>
+                    <constraint firstAttribute="bottom" secondItem="afY-2N-whJ" secondAttribute="bottom" id="lkR-Bb-adV"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="areaLabel" destination="hDY-3m-jNw" id="Cpn-GN-VzD"/>
+                <outlet property="cityLabel" destination="QMr-Kd-gjD" id="4Qj-WZ-8P7"/>
+                <outlet property="nameLabel" destination="kxH-hE-lfp" id="q8C-Yv-XSg"/>
+            </connections>
+            <point key="canvasLocation" x="226.71755725190837" y="3.5211267605633805"/>
+        </tableViewCell>
+    </objects>
+</document>
