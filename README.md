@@ -3,12 +3,12 @@ iOS Swift Project
 使用 Combine framework 實作 MVVM 架構的程式 
 取得台北市所有UBike站點
 
-[站點列表](https://raw.github.com/PersonZhang01/UbikeStationList/master/Screenshot/StationList.png)
-[搜尋區域](https://raw.github.com/PersonZhang01/UbikeStationList/master/Assets/SearchArea.png)
+![站點列表](https://raw.github.com/PersonZhang01/UbikeStationList/main/Screenshot/StationList.png)
+![搜尋區域](https://raw.github.com/PersonZhang01/UbikeStationList/main/Assets/SearchArea.png)
 
-1. 區域請顯示 API 中 “sarea” 欄位資料
-2. 站點名稱請顯示 API 中 “sna” 欄位資料
-3. 搜尋站點請搜尋特定區域的資料，例如搜尋 “松山區”，顯示在松山區的所有站點
+- 區域請顯示 API 中 “sarea” 欄位資料
+- 站點名稱請顯示 API 中 “sna” 欄位資料
+- 搜尋站點請搜尋特定區域的資料，例如搜尋 “松山區”，顯示在松山區的所有站點
 ==============
 *   [Request](#request)
 *   [Response](#response)
