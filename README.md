@@ -1,10 +1,10 @@
 # UbikeStationList
-iOS Swift Project
-使用 Combine framework 實作 MVVM 架構的程式 
-取得台北市所有UBike站點
+iOS Swift Project  
+使用 Combine framework 實作 MVVM 架構的程式  
+取得台北市所有UBike站點  
 
 ![站點列表](https://raw.github.com/PersonZhang01/UbikeStationList/main/Screenshot/StationList.png)
-![搜尋區域](https://raw.github.com/PersonZhang01/UbikeStationList/main/Assets/SearchArea.png)
+![搜尋區域](https://raw.github.com/PersonZhang01/UbikeStationList/main/Screenshot/SearchArea.png)
 
 - 區域請顯示 API 中 “sarea” 欄位資料
 - 站點名稱請顯示 API 中 “sna” 欄位資料
