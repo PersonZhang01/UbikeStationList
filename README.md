@@ -4,8 +4,7 @@ iOS Swift Project
 取得台北市所有UBike站點  
 |                       站點列表                        |                       搜尋區域                        |
 | ---------------------------------------------------- | ---------------------------------------------------- |
-![站點列表](https://raw.github.com/PersonZhang01/UbikeStationList/main/Screenshot/StationList.png) | 
-![搜尋區域](https://raw.github.com/PersonZhang01/UbikeStationList/main/Screenshot/SearchArea.png) |
+![站點列表](https://raw.github.com/PersonZhang01/UbikeStationList/main/Screenshot/StationList.png) | ![搜尋區域](https://raw.github.com/PersonZhang01/UbikeStationList/main/Screenshot/SearchArea.png) |
 
 - 區域請顯示 API 中 “sarea” 欄位資料
 - 站點名稱請顯示 API 中 “sna” 欄位資料
